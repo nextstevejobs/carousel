@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>carousel</title>
+	<link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+	<div class="poster wrap" data-setting='
+									{
+									"width":1000,
+									"height":270,
+									"picWidth":540,
+									"picHeight":270,
+									"scale":0.9,
+									"autoPlay":true,
+									"speed":500,
+									"delay":500,
+									"verticalAlign":"middle"
+									}
+									'>
+		<div class="icon icon-prev"></div>
+		<ul>
+			<li><a href="#"><img src="img/1.jpg"></a></li>
+			<li><a href="#"><img src="img/2.jpg"></a></li>
+			<li><a href="#"><img src="img/3.jpg"></a></li>
+			<li><a href="#"><img src="img/4.jpg"></a></li>
+			<li><a href="#"><img src="img/5.jpg"></a></li>
+			<li><a href="#"><img src="img/6.jpg"></a></li>
+			<li><a href="#"><img src="img/4.jpg"></a></li>
+			<li><a href="#"><img src="img/5.jpg"></a></li>
+			<li><a href="#"><img src="img/6.jpg"></a></li>
+		</ul>
+		<div class="icon icon-next"></div>
+	</div>
+
+	<!-- <div class="poster wrap" data-setting='
+									{
+									"width":400,
+									"height":270,
+									"picWidth":640,
+									"picHeight":270,
+									"scale":0.9,
+									"verticalAlign":"middle"
+									}
+									'>
+		<div class="icon icon-prev"></div>
+		<ul>
+			<li><a href="#"><img src="img/1.jpg"></a></li>
+			<li><a href="#"><img src="img/2.jpg"></a></li>
+			<li><a href="#"><img src="img/3.jpg"></a></li>
+			<li><a href="#"><img src="img/4.jpg"></a></li>
+			<li><a href="#"><img src="img/5.jpg"></a></li>
+			<li><a href="#"><img src="img/6.jpg"></a></li>
+		</ul>
+		<div class="icon icon-next"></div>
+	</div> -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// var carousel = new Carousel($(".f-poster").eq(0));
+
+			Carousel.init($(".poster"));
+		})
+	</script>
+</body>
+</html>
